@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section-name {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+
+  @include circle-left;
+}
+
+.title {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.title--xs {
+  font-size: 0.875rem;
+  line-height: 1.66;
+}
+
+.title--sm {
+  font-size: 1.25rem;
+  line-height: 1.33;
+}
+
+.title--md {
+  font-size: 2.25rem;
+  line-height: 1.66;
+}
+
+.title--lg {
+  font-size: 3rem;
+}
+
+.title--underlined {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: $color-main;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  color: $color-text;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button--filled {
+  background-color: $color-main;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button--ghost {
+  background-color: transparent;
+}

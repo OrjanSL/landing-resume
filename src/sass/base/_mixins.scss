@@ -1,0 +1,33 @@
+@mixin circle {
+  position: relative;
+  z-index: 5;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 2.25rem;
+    height: 2.25rem;
+    background-color: $color-main;
+    border-radius: 50%;
+    z-index: -5;
+  }
+}
+
+@mixin circle-left {
+  @include circle;
+
+  &::before {
+    left: 0.5rem;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin circle-center {
+  @include circle;
+
+  &::before {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,38 @@
+.sidepanel {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  transform: rotate(-90deg) translateY(-470%);
+  z-index: 10;
+}
+
+.sidepanel__item {
+  & + & {
+    margin-left: 15px;
+  }
+}
+
+.sidepanel__divider {
+  width: 70px;
+  height: 1px;
+  background-color: $color-text;
+}
+.sidepanel__text {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.sidepanel__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: invert(55%) sepia(99%) saturate(628%) hue-rotate(360deg) brightness(103%) contrast(105%);
+  }
+}

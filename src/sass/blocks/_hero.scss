@@ -1,0 +1,23 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../../img/main_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__inner {
+  padding-top: 30vh;
+}
+
+.hero__section-name {
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero__title {
+  margin-bottom: 1.5rem;
+}
+.hero__wrapper {
+}

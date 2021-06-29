@@ -2,29 +2,57 @@
 }
 .about__inner {
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 400px 570px;
   grid-template-rows: 240px minmax(320px, auto);
   gap: 40px 70px;
 }
 .about__photo {
+  grid-row: 1/-1;
 }
 .about__content {
 }
 .section-name {
+  margin-left: 0.625rem;
+  margin-top: 0.425rem;
 }
 .about__section-name {
 }
-.title {
-}
-.title--md {
-}
+
 .about__title {
-}
-.divider {
+  margin-bottom: 0.5rem;
 }
 .about__text {
+  margin-top: 1.25rem;
 }
 .about__skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .about__card {
+}
+
+.card-about {
+  display: grid;
+  grid-template-columns: 40px 200px;
+  column-gap: 20px;
+}
+.card-about__icon {
+  img {
+    margin-top: 0.9375rem;
+    margin-left: 0.9375rem;
+    max-width: 100%;
+  }
+
+  @include circle-left;
+
+  &::before {
+    top: 1.125rem;
+    left: 1.125rem;
+  }
+}
+.card-about__content {
+}
+.card-about__text {
+  margin-top: 6px;
 }

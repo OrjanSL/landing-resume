@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+section + section {
+  margin-top: 7.5rem;
+}
+
 .section-name {
   display: inline-block;
   font-size: 1rem;
@@ -36,18 +40,13 @@
   font-size: 3rem;
 }
 
-.title--underlined {
-  position: relative;
+.text {
+  font-weight: 500;
+}
 
-  &::before {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-    width: 60px;
-    height: 2px;
-    background-color: $color-main;
-  }
+.text--sm {
+  font-size: 0.75rem;
+  line-height: 1.5;
 }
 
 .button {
@@ -68,4 +67,10 @@
 
 .button--ghost {
   background-color: transparent;
+}
+
+.divider {
+  width: 60px;
+  height: 4px;
+  background-color: $color-main;
 }

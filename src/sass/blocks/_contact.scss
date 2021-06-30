@@ -1,0 +1,94 @@
+.contact {
+  padding-bottom: 60px;
+}
+.contact__inner {
+  display: grid;
+  grid-template-columns: 400px 570px;
+  justify-content: space-around;
+}
+.contact__photo {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.contact__content {
+}
+.contact__section-name {
+}
+.contact__title {
+}
+.contact__divider {
+  margin-bottom: 1.25rem;
+}
+.contact__socials {
+}
+.socials-contact {
+}
+.socials-contact__links {
+  margin-top: 1.25rem;
+
+  a {
+    display: inline-block;
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  a + a {
+    margin-left: 1.25rem;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.contact__message {
+}
+.contact__form {
+  display: grid;
+  grid-template-rows: 45px 190px 45px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  margin-top: 20px;
+  row-gap: 30px;
+  column-gap: 25px;
+}
+
+.contact__input,
+.contact__textarea {
+  position: relative;
+
+  > label {
+    @extend .text--sm;
+    position: absolute;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    z-index: 10;
+  }
+}
+
+.contact__input {
+  > input {
+    @extend .text--sm;
+
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.contact__textarea {
+  max-width: 100%;
+  grid-column: span 2;
+  resize: none;
+
+  > textarea {
+    padding: 10px;
+  }
+}
+
+.contact__button {
+  justify-self: flex-start;
+}

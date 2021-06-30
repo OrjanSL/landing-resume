@@ -1,0 +1,41 @@
+.prices {
+  text-align: center;
+}
+.prices__section-name {
+}
+.prices__divider {
+  margin: 25px auto 60px;
+}
+.prices__content {
+  display: grid;
+  grid-template-columns: repeat(2, 22.875rem);
+  grid-template-rows: repeat(3, 2.75rem);
+  gap: 0.9375rem;
+  justify-content: space-between;
+}
+.prices__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  text-align: start;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 0;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    background-color: $color-main;
+    border-radius: 50%;
+  }
+}
+.prices__item-value {
+  text-align: end;
+}
+.prices__item-description {
+  grid-column: 1/-1;
+  margin-top: 5px;
+}

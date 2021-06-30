@@ -15,7 +15,10 @@
 }
 .skills__list {
   display: grid;
-  grid-template-columns: repeat(4, 270px);
+  width: 100%;
+  // grid-template-columns: repeat(4, 270px);
+  // grid-template-rows: repeat(2, 270px);
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-template-rows: repeat(2, 270px);
   grid-auto-rows: 270px;
   gap: 0.75rem;
@@ -49,7 +52,8 @@
 
 .skills__bar-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px 45px;
   margin-top: $margin-section;
 }
@@ -80,4 +84,16 @@
   height: 100%;
   background-color: $color-main;
   border-radius: 4px;
+}
+
+@include media-down("lg") {
+  .skills__divider {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@include media-down("xs") {
+  .skills__bar-list {
+    grid-template-columns: 1fr;
+  }
 }

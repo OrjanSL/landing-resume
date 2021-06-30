@@ -27,7 +27,7 @@
 .socials-contact {
 }
 .socials-contact__links {
-  margin-top: 1.25rem;
+  margin: 1.25rem 0;
 
   a {
     display: inline-block;
@@ -86,9 +86,52 @@
 
   > textarea {
     padding: 10px;
+    width: 100%;
+    height: 100%;
   }
 }
 
 .contact__button {
   justify-self: flex-start;
+}
+
+@include media-down("xl") {
+  .contact__inner {
+    grid-template-columns: 350px 570px;
+  }
+}
+@include media-down("lg") {
+  .contact__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__divider {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .contact__photo {
+    display: none;
+  }
+}
+
+@include media-down("md") {
+}
+@include media-down("sm") {
+  .contact__form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 45px 45px 190px 45px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .contact__textarea {
+    grid-column: initial;
+  }
+
+  .contact__button {
+    justify-self: center;
+  }
+}
+@include media-down("xs") {
 }

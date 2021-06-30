@@ -92,10 +92,20 @@ section + section {
 @include media-down("xl") {
 }
 @include media-down("lg") {
+  section + section {
+    margin-top: 5.5rem;
+  }
 }
 @include media-down("md") {
+  section + section {
+    margin-top: 3.5rem;
+  }
 }
 @include media-down("sm") {
+  section + section {
+    margin-top: 2.5rem;
+  }
+
   .title--md {
     font-size: 1.5rem;
     line-height: 1.5;

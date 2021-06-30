@@ -24,11 +24,14 @@
 .about__section-name {
 }
 
+.about__divider {
+  margin-bottom: 20px;
+}
+
 .about__title {
   margin-bottom: 0.5rem;
 }
 .about__text {
-  margin-top: 1.25rem;
 }
 .about__skills {
   display: flex;
@@ -74,7 +77,15 @@
   .about__inner {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
-    gap: 40px 10px;
+    gap: 20px 10px;
+  }
+
+  .card-about {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .about__divider {
+    margin-top: 15px;
   }
 }
 
@@ -87,6 +98,10 @@
 
   .about__photo {
     height: 500px;
+  }
+
+  .about__skills {
+    gap: 10px;
   }
 }
 @include media-down("sm") {

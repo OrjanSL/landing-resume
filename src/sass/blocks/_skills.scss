@@ -11,7 +11,7 @@
 .skills__title {
 }
 .skills__divider {
-  margin-top: 25px;
+  margin: 25px auto 60px;
 }
 .skills__list {
   display: grid;
@@ -22,7 +22,6 @@
   grid-template-rows: repeat(2, 270px);
   grid-auto-rows: 270px;
   gap: 0.75rem;
-  margin-top: 60px;
 }
 
 .skills__card {
@@ -88,7 +87,7 @@
 
 @include media-down("lg") {
   .skills__divider {
-    margin-bottom: 2.5rem;
+    margin: 15px auto 20px;
   }
 }
 

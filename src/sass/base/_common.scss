@@ -13,6 +13,14 @@
   padding: 0 10px;
 }
 
+.circle-left {
+  @include circle-left;
+}
+
+.circle-center {
+  @include circle-center;
+}
+
 ul {
   list-style-type: none;
 }
@@ -27,7 +35,7 @@ section + section {
   font-weight: 700;
   line-height: 1.5;
 
-  @include circle-left;
+  // @include circle-left;
 }
 
 .title {
@@ -90,10 +98,13 @@ section + section {
 }
 
 @include media-down("xl") {
+  section + section {
+    margin-top: 5.5rem;
+  }
 }
 @include media-down("lg") {
   section + section {
-    margin-top: 5.5rem;
+    margin-top: 4.5rem;
   }
 }
 @include media-down("md") {
@@ -116,4 +127,7 @@ section + section {
   }
 }
 @include media-down("xs") {
+  section + section {
+    margin-top: 1.5rem;
+  }
 }

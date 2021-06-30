@@ -14,15 +14,4 @@
 @import "blocks/works";
 @import "blocks/prices";
 @import "blocks/contact";
-
-* {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
+@import "blocks/media";

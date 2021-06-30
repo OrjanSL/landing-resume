@@ -8,6 +8,12 @@
 }
 .about__photo {
   grid-row: 1/-1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 .about__content {
 }
@@ -55,4 +61,51 @@
 }
 .card-about__text {
   margin-top: 6px;
+}
+
+@include media-down("xl") {
+  .about__inner {
+    grid-template-columns: 380px 570px;
+    gap: 40px 20px;
+    justify-content: center;
+  }
+}
+@include media-down("lg") {
+  .about__inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 40px 10px;
+  }
+}
+
+@include media-down("md") {
+  .about__inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, auto);
+    gap: 10px 10px;
+  }
+
+  .about__photo {
+    height: 500px;
+  }
+}
+@include media-down("sm") {
+  .about__skills {
+    justify-content: center;
+  }
+
+  .about__photo {
+    height: 300px;
+  }
+
+  .about__card {
+    & + & {
+      margin-top: 20px;
+    }
+  }
+}
+@include media-down("xs") {
+  .about__card {
+    width: 100%;
+  }
 }

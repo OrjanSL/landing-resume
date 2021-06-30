@@ -95,3 +95,29 @@
 }
 .card-exp__text {
 }
+
+@include media-down("xl") {
+}
+@include media-down("lg") {
+  .exp__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exp__category {
+    & + & {
+      margin-top: 40px;
+    }
+  }
+
+  .exp__divider {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@include media-down("md") {
+}
+@include media-down("sm") {
+}
+@include media-down("xs") {
+}

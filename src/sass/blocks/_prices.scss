@@ -9,7 +9,7 @@
 .prices__content {
   display: grid;
   grid-template-columns: repeat(2, 22.875rem);
-  grid-template-rows: repeat(3, 2.75rem);
+  grid-template-rows: repeat(3, auto);
   gap: 0.9375rem;
   justify-content: space-between;
 }
@@ -17,6 +17,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
   justify-content: space-between;
   padding-left: 1.5rem;
   text-align: start;
@@ -38,4 +39,23 @@
 .prices__item-description {
   grid-column: 1/-1;
   margin-top: 5px;
+}
+
+@include media-down("xl") {
+}
+@include media-down("lg") {
+  .prices__divider {
+    margin: 15px auto 20px;
+  }
+}
+
+@include media-down("md") {
+  .prices__content {
+    grid-template-columns: minmax(300px, 500px);
+    justify-content: center;
+  }
+}
+@include media-down("sm") {
+}
+@include media-down("xs") {
 }

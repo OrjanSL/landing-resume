@@ -1,0 +1,83 @@
+.skills__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-name {
+}
+.skills__section-name {
+}
+.skills__title {
+}
+.skills__divider {
+  margin-top: 25px;
+}
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  grid-template-rows: repeat(2, 270px);
+  grid-auto-rows: 270px;
+  gap: 0.75rem;
+  margin-top: 60px;
+}
+
+.skills__card {
+}
+.card-skills {
+  padding: 30px;
+  border: 1px solid #000;
+}
+
+.card-skills__image {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 65px;
+
+  img {
+    max-height: 100%;
+  }
+}
+
+.card-skills__title {
+}
+
+.card-skills__text {
+  margin-top: 15px;
+}
+
+.skills__bar-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  gap: 30px 45px;
+  margin-top: $margin-section;
+}
+
+.skills__bar-item {
+}
+
+.bar-item-skills {
+}
+.bar-item-skills__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.25rem;
+}
+.section-name {
+}
+.bar-item-skills__percent {
+}
+.bar-item-skills__progressbar {
+  height: 14px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #e8e4de;
+  border-radius: 4px;
+}
+.bar-item-skills__progress {
+  height: 100%;
+  background-color: $color-main;
+  border-radius: 4px;
+}

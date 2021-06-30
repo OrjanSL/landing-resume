@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 section + section {
   margin-top: 7.5rem;
 }

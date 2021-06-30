@@ -88,3 +88,22 @@ section + section {
   height: 4px;
   background-color: $color-main;
 }
+
+@include media-down("xl") {
+}
+@include media-down("lg") {
+}
+@include media-down("md") {
+}
+@include media-down("sm") {
+  .title--md {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .title--lg {
+    font-size: 1.625rem;
+  }
+}
+@include media-down("xs") {
+}

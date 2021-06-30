@@ -21,3 +21,18 @@
 }
 .hero__wrapper {
 }
+
+@include media-down("xl") {
+}
+@include media-down("lg") {
+}
+
+@include media-down("md") {
+  .hero {
+    background-position-x: 59%;
+  }
+}
+@include media-down("sm") {
+}
+@include media-down("xs") {
+}

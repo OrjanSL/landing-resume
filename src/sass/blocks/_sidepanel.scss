@@ -36,3 +36,9 @@
     filter: invert(55%) sepia(99%) saturate(628%) hue-rotate(360deg) brightness(103%) contrast(105%);
   }
 }
+
+@include media-down("xl") {
+  .sidepanel {
+    display: none;
+  }
+}
